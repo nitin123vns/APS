@@ -88,16 +88,27 @@
             }
 
         </style>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var msg = sessionStorage.getItem('user_type');
+                var msgs=sessionStorage.getItem('Id');
+                
+                document.getElementById('player-name').innerHTML =sessionStorage.getItem('Userid');
+                
 
+            });
+        </script>
     </head>
     <body>
+      
 <div class="topnav">
 <div class="container">
  <div id="mySidenav" class="sidenav pull-left">
             <a style="border: none !important; background: none !important;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <div style="text-align:center"> WELCOME:-<span style="font-size:15px;cursor:pointer"id="player-name"></span></div>
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
-            <a href="#">Clients</a>
+           
             <a href="#">Logout</a>
         </div>
 
